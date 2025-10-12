@@ -53,6 +53,8 @@ public class CustomerController extends BaseController {
         switch (action) {
             case "list":
                 return listCustomers(request);
+            case "search":
+                return searchCustomers(request);
             case "add":
                 return showAddForm(request);
             case "edit":
@@ -72,6 +74,44 @@ public class CustomerController extends BaseController {
                 return deleteCustomer(request);
             default:
                 throw new IllegalArgumentException("不支持的操作: " + action);
+        }
+    }
+    
+    private String searchCustomers(HttpServletRequest request) throws Exception {
+        String keyword = getParameter(request, "keyword");
+        if (Utils.isEmpty(keyword)) {
+            return "json:" + createErrorResponse("搜索关键词不能为空", 400);
+        }
+        
+        int page = getIntParameter(request, "page", 1);
+        int size = getIntParameter(request, "size", 10);
+        
+        try {
+            List<Customer> customers = customerService.searchCustomersByName(keyword);
+            
+            // 简单分页
+            int total = customers.size();
+            int startIndex = (page - 1) * size;
+            int endIndex = Math.min(startIndex + size, total);
+            
+            if (startIndex < total) {
+                customers = customers.subList(startIndex, endIndex);
+            } else {
+                customers.clear();
+            }
+            
+            request.setAttribute("customers", customers);
+            request.setAttribute("currentPage", page);
+            request.setAttribute("pageSize", size);
+            request.setAttribute("totalCount", total);
+            request.setAttribute("totalPages", (total + size - 1) / size);
+            request.setAttribute("searchKeyword", keyword);
+            request.setAttribute("isSearchResult", true);
+            
+            return "/admin/customer-list.jsp";
+        } catch (Exception e) {
+            logger.error("搜索客户失败", e);
+            return "json:" + createErrorResponse("搜索失败: " + e.getMessage(), 500);
         }
     }
     

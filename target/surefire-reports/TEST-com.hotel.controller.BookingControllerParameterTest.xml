@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.hotel.controller.BookingControllerParameterTest" time="0.068" tests="3" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="D:\JAVA\newhomework1\target\test-classes;D:\JAVA\newhomework1\target\classes;C:\Users\lenovo\.m2\repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar;C:\Users\lenovo\.m2\repository\javax\servlet\jsp\javax.servlet.jsp-api\2.3.3\javax.servlet.jsp-api-2.3.3.jar;C:\Users\lenovo\.m2\repository\javax\servlet\jstl\1.2\jstl-1.2.jar;C:\Users\lenovo\.m2\repository\com\mysql\mysql-connector-j\8.0.33\mysql-connector-j-8.0.33.jar;C:\Users\lenovo\.m2\repository\com\google\protobuf\protobuf-java\3.21.9\protobuf-java-3.21.9.jar;C:\Users\lenovo\.m2\repository\com\alibaba\druid\1.2.18\druid-1.2.18.jar;C:\Users\lenovo\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\lenovo\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\lenovo\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\lenovo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\lenovo\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="D:\JAVA\jdk-21.0.8\bin"/>
+    <property name="sun.java.command" value="C:\Users\lenovo\AppData\Local\Temp\surefire16249585273655627316\surefirebooter-20251012173124780_3.jar C:\Users\lenovo\AppData\Local\Temp\surefire16249585273655627316 2025-10-12T17-31-24_657-jvmRun1 surefire-20251012173124780_1tmp surefire_0-20251012173124780_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\JAVA\newhomework1\target\test-classes;D:\JAVA\newhomework1\target\classes;C:\Users\lenovo\.m2\repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar;C:\Users\lenovo\.m2\repository\javax\servlet\jsp\javax.servlet.jsp-api\2.3.3\javax.servlet.jsp-api-2.3.3.jar;C:\Users\lenovo\.m2\repository\javax\servlet\jstl\1.2\jstl-1.2.jar;C:\Users\lenovo\.m2\repository\com\mysql\mysql-connector-j\8.0.33\mysql-connector-j-8.0.33.jar;C:\Users\lenovo\.m2\repository\com\google\protobuf\protobuf-java\3.21.9\protobuf-java-3.21.9.jar;C:\Users\lenovo\.m2\repository\com\alibaba\druid\1.2.18\druid-1.2.18.jar;C:\Users\lenovo\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\lenovo\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\lenovo\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\lenovo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\lenovo\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\lenovo"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-07-15"/>
+    <property name="java.home" value="D:\JAVA\jdk-21.0.8"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\JAVA\newhomework1"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\lenovo\AppData\Local\Temp\surefire16249585273655627316\surefirebooter-20251012173124780_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.8+12-LTS-250"/>
+    <property name="user.name" value="lenovo"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\lenovo\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\lenovo\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.8"/>
+    <property name="user.dir" value="D:\JAVA\newhomework1"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="D:\JAVA\jdk-21.0.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\JAVA\jdk-21.0.8\bin;C:\Program Files\Python39\Scripts\;D:\JAVA\apache-maven-3.9.11\bin;C:\Program Files\Python39\;D:\vmwaree\bin\;D:\JAVA\apache-maven-3.9.11\bin;D:\JAVA\jdk-21.0.8\jre\bin;D:\JAVA\mysql-9.4.0-winx64\bin;C:\Users\lenovo\.cargo\bin;D:\Rust\util\mingw64\bin;C:\Python313\Scripts\;C:\Python313\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\libnvvp;C:\Program Files\Common Files\Oracle\Java\javapath;D:\qq.2;D:\qq.2\QQ.exe;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\matlab\matlab2019a\runtime\win64;D:\matlab\matlab2019a\bin;D:\matlab\matlab2019a\polyspace\bin;C:\Program Files\dotnet\;D:\Windows Kits\10\Windows Performance Toolkit\;D:\matlab\runtime\win64;D:\matlab\bin;D:\微信开发者工具\微信web开发者工具\dll;C:\Program Fi;es\NVIDIA Corporation\Nsight Compute 2024.3.2\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;D:\mingw\llvm-mingw-20241217-msvcrt-x86_64\bin;C:\ProgramData\chocolatey\bin;D:\nodejs\;C:\Program Files\Git\cmd;D:\google download\ffmpeg-7.1.1-full_build\ffmpeg-7.1.1-full_build\bin;D:\佟雨泽\大二下\ROS\xshell\;D:\conda;D:\conda\Scripts;D:\conda\Library\bin;D:\conda\Library\usr\bin;C:\Program Files\Docker\Docker\resources\bin;d:\cursor\resources\app\bin;C:\Users\lenovo\AppData\Local\Muse Hub\lib;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\lenovo\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\lenovo\AppData\Local\Programs\Python\Python312\;C:\Users\lenovo\AppData\Local\Programs\Python\Launcher\;C:\Users\lenovo\.cargo\bin;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;D:\vscode\Microsoft VS Code\bin;D:\pycharm\PyCharm Community Edition 2024.1.1\bin;C:\Users\lenovo\AppData\Roaming\Programs\Zero Install;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;C:\Users\lenovo\AppData\Local\Programs\Ollama;D:\clion\CLion 2024.3.2\bin;;C:\Users\lenovo\AppData\Roaming\npm;C:\Users\lenovo\AppData\Local\GitHubDesktop\bin;D:\google download\ffmpeg-7.1.1-full_build\ffmpeg-7.1.1-full_build\bin;C:\Users\lenovo\AppData\Local\Muse Hub\lib;D:\cursor\resources\app\bin;D:\Qoder\bin;D:\RustRover\RustRover 2025.2.2\bin;c:\Users\lenovo\AppData\Roaming\Qoder\User\globalStorage\github.copilot-chat\debugCommand;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.8+12-LTS-250"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testErrorMessageFormat" classname="com.hotel.controller.BookingControllerParameterTest" time="0.008">
+    <system-out><![CDATA[=== 测试错误信息格式 ===
+预期的错误信息:
+- empty_customer: 客户不能为空
+- empty_room: 房间不能为空
+- empty_checkin: 入住日期不能为空
+- empty_checkout: 退房日期不能为空
+- empty_guests: 入住人数不能为空
+- invalid_guests_zero: 入住人数必须为正数
+- invalid_guests_negative: 入住人数必须为正数
+- invalid_date_order: 入住日期不能晚于退房日期
+
+这些错误信息应该在前端正确显示给用户
+错误信息格式测试完成
+
+]]></system-out>
+  </testcase>
+  <testcase name="testGuestsCountValidation" classname="com.hotel.controller.BookingControllerParameterTest" time="0.003">
+    <system-out><![CDATA[
+=== 测试入住人数验证逻辑 ===
+测试值: '' -> ❌ 参数为空或null - 应该显示错误: 入住人数不能为空
+测试值: '0' -> ❌ 入住人数 ≤ 0 - 应该显示错误: 入住人数必须为正数
+测试值: '-1' -> ❌ 入住人数 ≤ 0 - 应该显示错误: 入住人数必须为正数
+测试值: '1' -> ✅ 验证通过 - 入住人数: 1
+测试值: '2' -> ✅ 验证通过 - 入住人数: 2
+测试值: '5' -> ✅ 验证通过 - 入住人数: 5
+测试值: 'abc' -> ❌ 数字格式错误 - 应该显示错误: 入住人数格式不正确
+测试值: 'null' -> ❌ 参数为空或null - 应该显示错误: 入住人数不能为空
+测试值: '  ' -> ❌ 参数为空或null - 应该显示错误: 入住人数不能为空
+测试值: '10' -> ✅ 验证通过 - 入住人数: 10
+入住人数验证测试完成
+
+]]></system-out>
+  </testcase>
+  <testcase name="testParameterProcessingFlow" classname="com.hotel.controller.BookingControllerParameterTest" time="0.005">
+    <system-out><![CDATA[=== 测试参数处理流程 ===
+模拟参数:
+- customerId: 1
+- roomId: 101
+- checkInDate: 2024-09-26
+- checkOutDate: 2024-09-27
+- guestsCount: 2
+- specialRequests: 测试预订
+
+验证结果:
+✅ 客户ID验证通过
+✅ 房间ID验证通过
+✅ 入住日期验证通过
+✅ 退房日期验证通过
+✅ 入住人数验证通过: 2人
+
+总体验证结果: ✅ 所有参数验证通过
+参数处理流程测试完成
+
+]]></system-out>
+  </testcase>
+</testsuite>

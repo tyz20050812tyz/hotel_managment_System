@@ -35,20 +35,28 @@ Controller层位于表现层和业务层之间，是MVC架构中的C（Controlle
 **核心思想**: 在基类中定义算法的骨架，将某些步骤的实现延迟到子类。
 
 **请求处理流程**:
-```
-processRequest() [模板方法]
-    ├── 1. 设置字符编码
-    ├── 2. validateParameters() [钩子方法]
-    │       └── 子类可选择性重写
-    ├── 3. checkPermission() [钩子方法]
-    │       └── 子类可选择性重写
-    ├── 4. handleBusinessLogic() [抽象方法]
-    │       └── 子类必须实现
-    ├── 5. handleResult() [钩子方法]
-    │       └── 统一结果处理
-    └── 6. handleException() [钩子方法]
-            └── 统一异常处理
-```
+```mermaid
+flowchart TD
+    A[processRequest 模板方法] --> B[设置字符编码]
+    B --> C[validateParameters 钩子方法]
+    C --> D{参数验证}
+    D -->|Fail| E[handleValidationError]
+    D -->|Pass| F[checkPermission 钩子方法]
+    F --> G{权限检查}
+    G -->|Fail| H[handlePermissionError]
+    G -->|Pass| I[handleBusinessLogic 抽象方法<br/>子类必须实现]
+    I --> J[handleResult 钩子方法]
+    J --> K[统一结果处理]
+    E --> L[End]
+    H --> L
+    K --> L
+    
+    subgraph "错误处理"
+        M[handleException 钩子方法<br/>统一异常处理]
+    end
+    
+    I -.-> M
+    M --> L
 
 ### 2.3 核心方法
 
@@ -241,21 +249,26 @@ protected boolean validateParameters(HttpServletRequest request) {
 ```
 
 ### 3.4 登录流程图
-```
-用户访问 /login (GET)
-    ↓
-检查是否已登录
-    ├── 是 → 重定向到首页
-    └── 否 → 显示登录页面
-             ↓
-        用户提交表单 (POST)
-             ↓
-        参数验证
-             ↓
-        调用UserService.authenticate()
-             ├── 成功 → 创建Session → 重定向到首页
-             └── 失败 → 显示错误信息 → 返回登录页
-```
+```mermaid
+flowchart TD
+    A[用户访问 /login GET] --> B{检查是否已登录}
+    B -->|Yes| C[重定向到首页]
+    B -->|No| D[显示登录页面]
+    D --> E[用户提交表单 POST]
+    E --> F[参数验证<br/>用户名密码非空]
+    F --> G{验证结果}
+    G -->|Fail| H[显示错误信息<br/>返回登录页]
+    G -->|Pass| I[调用UserService.authenticate]
+    I --> J[查询数据库验证]
+    J --> K{验证结果}
+    K -->|Success| L[创建Session<br/>设置用户信息<br/>30分钟超时]
+    K -->|Fail| M[显示登录失败<br/>返回登录页]
+    L --> N[记录登录日志]
+    N --> O[重定向到首页]
+    C --> P[End]
+    H --> P
+    M --> P
+    O --> P
 
 ## 4. LogoutController - 登出控制器
 

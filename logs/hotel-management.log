@@ -621,3 +621,48 @@ java.lang.IllegalArgumentException: 不支持的操作: type/add
 2025-10-08 18:49:53.884 [localhost-startStop-1] INFO  com.hotel.filter.LoginFilter - LoginFilter initialized
 2025-10-08 18:55:45.714 [localhost-startStop-2] INFO  com.hotel.filter.LoginFilter - LoginFilter destroyed
 2025-10-08 18:58:16.622 [localhost-startStop-1] INFO  com.hotel.filter.LoginFilter - LoginFilter initialized
+2025-10-12 17:31:25.675 [main] INFO  com.hotel.util.ConnectionPool - Database connection pool initialized successfully
+2025-10-12 17:31:26.160 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-10-12 17:31:26.171 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.183 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.191 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.193 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.199 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.201 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.216 [main] INFO  com.hotel.dao.impl.BookingDAOImpl - Booking updated successfully with ID: 4
+2025-10-12 17:31:26.217 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.220 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.223 [main] INFO  com.hotel.dao.impl.RoomDAOImpl - Room updated successfully with ID: 16
+2025-10-12 17:31:26.225 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.337 [main] INFO  com.hotel.controller.BookingController - BookingController initialized
+2025-10-12 17:31:26.339 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.342 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.344 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.345 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.348 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.350 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.352 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.369 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.372 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.375 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.380 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.382 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.385 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.386 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.388 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.391 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.395 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.397 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.398 [main] INFO  com.hotel.util.ConnectionPool - Database connection test: SUCCESS
+2025-10-12 17:31:26.401 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.404 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.410 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.412 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.414 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.416 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.422 [main] INFO  com.hotel.dao.impl.UserDAOImpl - User inserted successfully with ID: 13
+2025-10-12 17:31:26.422 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.424 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.428 [main] INFO  com.hotel.dao.impl.UserDAOImpl - User updated successfully with ID: 13
+2025-10-12 17:31:26.429 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-12 17:31:26.435 [main] INFO  com.hotel.dao.impl.UserDAOImpl - User deleted successfully with ID: 13
