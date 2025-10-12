@@ -1,0 +1,11 @@
+com\hotel\service\BookingServiceTest.class
+com\hotel\controller\CheckInTest.class
+com\hotel\util\PasswordUtilTest.class
+com\hotel\controller\BookingControllerParameterTest.class
+com\hotel\controller\ControllerTest.class
+com\hotel\dao\BookingConflictTest.class
+com\hotel\util\DatabaseConnectionTest.class
+com\hotel\controller\BookingTotalPriceTest.class
+com\hotel\util\ConnectionPoolTest.class
+com\hotel\model\UserTest.class
+com\hotel\controller\CustomerIdCardValidationTest.class

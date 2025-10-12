@@ -1,0 +1,623 @@
+2025-09-25 20:40:52.040 [main] INFO  com.hotel.util.ConnectionPool - Database connection pool initialized successfully
+2025-09-25 20:40:52.052 [main] ERROR com.alibaba.druid.pool.DruidDataSource - {dataSource-1} init error
+java.sql.SQLException: url not set
+	at com.alibaba.druid.pool.DruidDataSource.resolveDriver(DruidDataSource.java:1274) ~[druid-1.2.18.jar:?]
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:899) [druid-1.2.18.jar:?]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1463) [druid-1.2.18.jar:?]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1459) [druid-1.2.18.jar:?]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:83) [druid-1.2.18.jar:?]
+	at com.hotel.util.ConnectionPool.getConnection(ConnectionPool.java:92) [classes/:?]
+	at com.hotel.util.ConnectionPoolTest.testGetConnection(ConnectionPoolTest.java:39) [test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59) [junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56) [junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.2.jar:4.13.2]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316) [surefire-junit4-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240) [surefire-junit4-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214) [surefire-junit4-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155) [surefire-junit4-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+2025-09-25 20:40:52.058 [main] ERROR com.hotel.util.ConnectionPool - Failed to get database connection
+java.sql.SQLException: url not set
+	at com.alibaba.druid.pool.DruidDataSource.resolveDriver(DruidDataSource.java:1274) ~[druid-1.2.18.jar:?]
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:899) ~[druid-1.2.18.jar:?]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1463) ~[druid-1.2.18.jar:?]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1459) ~[druid-1.2.18.jar:?]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:83) ~[druid-1.2.18.jar:?]
+	at com.hotel.util.ConnectionPool.getConnection(ConnectionPool.java:92) [classes/:?]
+	at com.hotel.util.ConnectionPoolTest.testGetConnection(ConnectionPoolTest.java:39) [test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59) [junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56) [junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.2.jar:4.13.2]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316) [surefire-junit4-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240) [surefire-junit4-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214) [surefire-junit4-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155) [surefire-junit4-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+2025-09-25 20:41:15.610 [main] INFO  com.hotel.util.ConnectionPool - Database connection pool initialized successfully
+2025-09-25 20:41:15.621 [main] ERROR com.alibaba.druid.pool.DruidDataSource - {dataSource-1} init error
+java.sql.SQLException: url not set
+	at com.alibaba.druid.pool.DruidDataSource.resolveDriver(DruidDataSource.java:1274) ~[druid-1.2.18.jar:?]
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:899) [druid-1.2.18.jar:?]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1463) [druid-1.2.18.jar:?]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1459) [druid-1.2.18.jar:?]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:83) [druid-1.2.18.jar:?]
+	at com.hotel.util.ConnectionPool.getConnection(ConnectionPool.java:92) [classes/:?]
+	at com.hotel.util.ConnectionPoolTest.testGetConnection(ConnectionPoolTest.java:39) [test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59) [junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56) [junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.2.jar:4.13.2]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316) [surefire-junit4-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240) [surefire-junit4-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214) [surefire-junit4-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155) [surefire-junit4-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+2025-09-25 20:41:15.630 [main] ERROR com.hotel.util.ConnectionPool - Failed to get database connection
+java.sql.SQLException: url not set
+	at com.alibaba.druid.pool.DruidDataSource.resolveDriver(DruidDataSource.java:1274) ~[druid-1.2.18.jar:?]
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:899) ~[druid-1.2.18.jar:?]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1463) ~[druid-1.2.18.jar:?]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1459) ~[druid-1.2.18.jar:?]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:83) ~[druid-1.2.18.jar:?]
+	at com.hotel.util.ConnectionPool.getConnection(ConnectionPool.java:92) [classes/:?]
+	at com.hotel.util.ConnectionPoolTest.testGetConnection(ConnectionPoolTest.java:39) [test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59) [junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56) [junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.2.jar:4.13.2]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316) [surefire-junit4-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240) [surefire-junit4-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214) [surefire-junit4-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155) [surefire-junit4-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+2025-09-25 20:43:00.636 [main] INFO  com.hotel.util.ConnectionPool - Database connection pool initialized successfully
+2025-09-25 20:43:01.266 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-09-25 20:43:01.277 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-25 20:43:01.279 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-25 20:43:01.284 [main] INFO  com.hotel.util.ConnectionPool - Database connection test: SUCCESS
+2025-09-25 20:44:05.085 [main] INFO  com.hotel.util.ConnectionPool - Database connection pool initialized successfully
+2025-09-25 20:44:05.510 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-09-25 20:44:05.523 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-25 20:44:05.524 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-25 20:44:05.527 [main] INFO  com.hotel.util.ConnectionPool - Database connection test: SUCCESS
+2025-09-25 20:46:27.204 [main] INFO  com.hotel.util.ConnectionPool - Database connection pool initialized successfully
+2025-09-25 20:46:27.688 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-09-25 20:46:27.701 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-25 20:46:27.703 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-25 20:46:27.705 [main] INFO  com.hotel.util.ConnectionPool - Database connection test: SUCCESS
+2025-09-25 20:46:38.528 [main] INFO  com.hotel.util.ConnectionPool - Database connection pool initialized successfully
+2025-09-25 20:46:39.006 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-09-25 20:46:39.027 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-25 20:46:39.028 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-25 20:46:39.031 [main] INFO  com.hotel.util.ConnectionPool - Database connection test: SUCCESS
+2025-09-25 20:46:52.131 [main] INFO  com.hotel.util.ConnectionPool - Database connection pool initialized successfully
+2025-09-25 20:46:52.612 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-09-25 20:46:52.623 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-25 20:46:52.626 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-25 20:46:52.631 [main] INFO  com.hotel.util.ConnectionPool - Database connection test: SUCCESS
+2025-09-25 20:49:10.628 [main] INFO  com.hotel.util.ConnectionPool - Database connection pool initialized successfully
+2025-09-25 20:49:11.340 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-09-25 20:49:11.356 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-25 20:49:11.358 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-25 20:49:11.361 [main] INFO  com.hotel.util.ConnectionPool - Database connection test: SUCCESS
+2025-09-25 20:49:23.571 [main] INFO  com.hotel.util.ConnectionPool - Database connection pool initialized successfully
+2025-09-25 20:49:24.149 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-09-25 20:49:24.161 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-25 20:49:24.163 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-25 20:49:24.166 [main] INFO  com.hotel.util.ConnectionPool - Database connection test: SUCCESS
+2025-09-26 12:15:51.257 [main] INFO  com.hotel.util.ConnectionPool - Database connection pool initialized successfully
+2025-09-26 12:15:51.796 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-09-26 12:15:51.818 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:16:04.013 [main] INFO  com.hotel.util.ConnectionPool - Database connection pool initialized successfully
+2025-09-26 12:16:04.571 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-09-26 12:16:04.592 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:16:04.611 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:16:04.614 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:16:04.616 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:16:04.630 [main] INFO  com.hotel.dao.impl.UserDAOImpl - User inserted successfully with ID: 4
+2025-09-26 12:16:04.631 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:16:04.635 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:16:04.646 [main] INFO  com.hotel.dao.impl.UserDAOImpl - User updated successfully with ID: 4
+2025-09-26 12:16:04.648 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:16:04.656 [main] INFO  com.hotel.dao.impl.UserDAOImpl - User deleted successfully with ID: 4
+2025-09-26 12:16:16.208 [main] INFO  com.hotel.util.ConnectionPool - Database connection pool initialized successfully
+2025-09-26 12:16:16.731 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-09-26 12:16:16.749 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:17:12.779 [main] INFO  com.hotel.util.ConnectionPool - Database connection pool initialized successfully
+2025-09-26 12:17:13.302 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-09-26 12:17:13.325 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:17:13.344 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:17:13.350 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:17:13.353 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:17:13.355 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:17:13.361 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:17:13.362 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:17:13.362 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:17:13.377 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:17:13.384 [main] INFO  com.hotel.dao.impl.BookingDAOImpl - Booking inserted successfully with ID: 5
+2025-09-26 12:17:13.386 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:17:13.386 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:17:13.386 [main] INFO  com.hotel.dao.impl.BookingDAOImpl - Booking deleted successfully with ID: 5
+2025-09-26 12:17:59.574 [main] INFO  com.hotel.util.ConnectionPool - Database connection pool initialized successfully
+2025-09-26 12:18:00.075 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-09-26 12:18:00.089 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:18:00.106 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:18:00.114 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:18:00.118 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:18:00.123 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:18:00.125 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:18:00.125 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:38:53.515 [main] INFO  com.hotel.util.ConnectionPool - Database connection pool initialized successfully
+2025-09-26 12:38:54.012 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-09-26 12:38:54.032 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:38:54.055 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:38:54.070 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:38:54.079 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:38:54.085 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:38:54.088 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:38:54.088 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:38:54.092 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:38:54.092 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:38:54.097 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:38:54.110 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:38:54.115 [main] INFO  com.hotel.dao.impl.BookingDAOImpl - Booking inserted successfully with ID: 9
+2025-09-26 12:38:54.115 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:38:54.122 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:38:54.126 [main] INFO  com.hotel.dao.impl.BookingDAOImpl - Booking deleted successfully with ID: 9
+2025-09-26 12:39:44.624 [main] INFO  com.hotel.util.ConnectionPool - Database connection pool initialized successfully
+2025-09-26 12:39:45.128 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-09-26 12:39:45.139 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:39:45.152 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:39:45.163 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:39:45.163 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:39:45.170 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:39:45.170 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:39:45.184 [main] INFO  com.hotel.dao.impl.BookingDAOImpl - Booking updated successfully with ID: 8
+2025-09-26 12:39:45.188 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:39:45.189 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 12:39:45.192 [main] INFO  com.hotel.dao.impl.RoomDAOImpl - Room updated successfully with ID: 9
+2025-09-26 12:39:45.194 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:19.950 [main] INFO  com.hotel.util.ConnectionPool - Database connection pool initialized successfully
+2025-09-26 20:44:20.433 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-09-26 20:44:20.440 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.453 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.464 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.464 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.471 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.471 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.488 [main] INFO  com.hotel.dao.impl.BookingDAOImpl - Booking updated successfully with ID: 12
+2025-09-26 20:44:20.488 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.489 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.500 [main] INFO  com.hotel.dao.impl.RoomDAOImpl - Room updated successfully with ID: 14
+2025-09-26 20:44:20.501 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.645 [main] INFO  com.hotel.controller.BookingController - BookingController initialized
+2025-09-26 20:44:20.647 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.651 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.651 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.651 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.658 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.663 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.663 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.678 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.682 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.683 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.689 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.691 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.693 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.694 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.698 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.698 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.700 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.701 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.708 [main] INFO  com.hotel.dao.impl.BookingDAOImpl - Booking inserted successfully with ID: 13
+2025-09-26 20:44:20.710 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.710 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.713 [main] INFO  com.hotel.dao.impl.BookingDAOImpl - Booking deleted successfully with ID: 13
+2025-09-26 20:44:20.720 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.720 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.720 [main] INFO  com.hotel.util.ConnectionPool - Database connection test: SUCCESS
+2025-09-26 20:44:20.724 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.726 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.738 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.746 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.749 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.749 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.755 [main] INFO  com.hotel.dao.impl.UserDAOImpl - User inserted successfully with ID: 5
+2025-09-26 20:44:20.755 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.755 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.758 [main] INFO  com.hotel.dao.impl.UserDAOImpl - User updated successfully with ID: 5
+2025-09-26 20:44:20.760 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-09-26 20:44:20.762 [main] INFO  com.hotel.dao.impl.UserDAOImpl - User deleted successfully with ID: 5
+2025-09-26 21:05:13.613 [localhost-startStop-1] INFO  com.hotel.filter.LoginFilter - LoginFilter initialized
+2025-10-08 14:44:47.636 [main] INFO  com.hotel.util.ConnectionPool - Database connection pool initialized successfully
+2025-10-08 14:44:48.311 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-10-08 14:44:48.331 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.347 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.375 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.378 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.381 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.392 [main] INFO  com.hotel.dao.impl.BookingDAOImpl - Booking updated successfully with ID: 7
+2025-10-08 14:44:48.392 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.395 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.398 [main] INFO  com.hotel.dao.impl.RoomDAOImpl - Room updated successfully with ID: 4
+2025-10-08 14:44:48.399 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.541 [main] INFO  com.hotel.controller.BookingController - BookingController initialized
+2025-10-08 14:44:48.547 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.552 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.556 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.557 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.559 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.561 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.563 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.576 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.578 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.581 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.584 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.605 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.607 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.609 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.611 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.613 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.614 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.616 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.629 [main] INFO  com.hotel.dao.impl.BookingDAOImpl - Booking inserted successfully with ID: 17
+2025-10-08 14:44:48.630 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.632 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.635 [main] INFO  com.hotel.dao.impl.BookingDAOImpl - Booking deleted successfully with ID: 17
+2025-10-08 14:44:48.639 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.639 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.640 [main] INFO  com.hotel.util.ConnectionPool - Database connection test: SUCCESS
+2025-10-08 14:44:48.643 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.645 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.659 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.662 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.664 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.666 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.672 [main] INFO  com.hotel.dao.impl.UserDAOImpl - User inserted successfully with ID: 8
+2025-10-08 14:44:48.673 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.675 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.679 [main] INFO  com.hotel.dao.impl.UserDAOImpl - User updated successfully with ID: 8
+2025-10-08 14:44:48.679 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:44:48.684 [main] INFO  com.hotel.dao.impl.UserDAOImpl - User deleted successfully with ID: 8
+2025-10-08 14:45:00.275 [main] INFO  com.hotel.util.ConnectionPool - Database connection pool initialized successfully
+2025-10-08 14:45:00.869 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-10-08 14:45:00.887 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:00.900 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:00.916 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:00.923 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:00.927 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:00.932 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:00.945 [main] INFO  com.hotel.dao.impl.BookingDAOImpl - Booking updated successfully with ID: 6
+2025-10-08 14:45:00.946 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:00.950 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:00.953 [main] INFO  com.hotel.dao.impl.RoomDAOImpl - Room updated successfully with ID: 7
+2025-10-08 14:45:00.955 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.119 [main] INFO  com.hotel.controller.BookingController - BookingController initialized
+2025-10-08 14:45:01.121 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.126 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.129 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.132 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.134 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.138 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.141 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.159 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.163 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.168 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.175 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.179 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.181 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.185 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.189 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.193 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.196 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.200 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.207 [main] INFO  com.hotel.dao.impl.BookingDAOImpl - Booking inserted successfully with ID: 18
+2025-10-08 14:45:01.208 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.210 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.213 [main] INFO  com.hotel.dao.impl.BookingDAOImpl - Booking deleted successfully with ID: 18
+2025-10-08 14:45:01.220 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.221 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.222 [main] INFO  com.hotel.util.ConnectionPool - Database connection test: SUCCESS
+2025-10-08 14:45:01.226 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.229 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.241 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.244 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.245 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.248 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.251 [main] INFO  com.hotel.dao.impl.UserDAOImpl - User inserted successfully with ID: 9
+2025-10-08 14:45:01.252 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.254 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.264 [main] INFO  com.hotel.dao.impl.UserDAOImpl - User updated successfully with ID: 9
+2025-10-08 14:45:01.265 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:45:01.268 [main] INFO  com.hotel.dao.impl.UserDAOImpl - User deleted successfully with ID: 9
+2025-10-08 14:45:18.227 [localhost-startStop-1] INFO  com.hotel.filter.LoginFilter - LoginFilter initialized
+2025-10-08 14:46:20.078 [http-bio-8080-exec-4] INFO  com.hotel.controller.LoginController - Login attempt for username: 帅哥
+2025-10-08 14:46:20.121 [http-bio-8080-exec-4] INFO  com.hotel.util.ConnectionPool - Database connection pool initialized successfully
+2025-10-08 14:46:20.788 [http-bio-8080-exec-4] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-10-08 14:46:20.805 [http-bio-8080-exec-4] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:46:20.827 [http-bio-8080-exec-4] INFO  com.hotel.service.impl.UserServiceImpl - User authenticated successfully: 帅哥
+2025-10-08 14:46:20.828 [http-bio-8080-exec-4] INFO  com.hotel.controller.LoginController - User logged in successfully: 帅哥 (ADMIN)
+2025-10-08 14:46:20.829 [http-bio-8080-exec-4] DEBUG com.hotel.controller.LoginController - Remember me option selected for user: 帅哥
+2025-10-08 14:46:20.831 [http-bio-8080-exec-4] DEBUG com.hotel.filter.LoginFilter - Processing request: /admin/index.jsp
+2025-10-08 14:46:20.832 [http-bio-8080-exec-4] DEBUG com.hotel.filter.LoginFilter - User 帅哥 is logged in, proceeding with request
+2025-10-08 14:46:29.463 [http-bio-8080-exec-2] INFO  com.hotel.controller.BookingController - BookingController initialized
+2025-10-08 14:46:29.464 [http-bio-8080-exec-2] DEBUG com.hotel.filter.LoginFilter - Processing request: /admin/booking/add
+2025-10-08 14:46:29.465 [http-bio-8080-exec-2] DEBUG com.hotel.filter.LoginFilter - User 帅哥 is logged in, proceeding with request
+2025-10-08 14:46:29.466 [http-bio-8080-exec-2] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:46:29.470 [http-bio-8080-exec-2] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:46:30.400 [http-bio-8080-exec-2] INFO  com.hotel.controller.CustomerController - CustomerController initialized
+2025-10-08 14:46:30.400 [http-bio-8080-exec-2] DEBUG com.hotel.filter.LoginFilter - Processing request: /admin/customer/list
+2025-10-08 14:46:30.401 [http-bio-8080-exec-2] DEBUG com.hotel.filter.LoginFilter - User 帅哥 is logged in, proceeding with request
+2025-10-08 14:46:30.403 [http-bio-8080-exec-2] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:46:30.949 [http-bio-8080-exec-2] INFO  com.hotel.controller.IndexController - IndexController initialized
+2025-10-08 14:46:30.949 [http-bio-8080-exec-2] DEBUG com.hotel.filter.LoginFilter - Processing request: /admin/index
+2025-10-08 14:46:30.950 [http-bio-8080-exec-2] DEBUG com.hotel.filter.LoginFilter - User 帅哥 is logged in, proceeding with request
+2025-10-08 14:46:30.951 [http-bio-8080-exec-2] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:46:30.959 [http-bio-8080-exec-2] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:46:30.962 [http-bio-8080-exec-2] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:46:30.968 [http-bio-8080-exec-2] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:46:30.977 [http-bio-8080-exec-2] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:46:30.979 [http-bio-8080-exec-2] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:46:30.982 [http-bio-8080-exec-2] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:46:30.984 [http-bio-8080-exec-2] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:46:30.986 [http-bio-8080-exec-2] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:46:30.990 [http-bio-8080-exec-2] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:46:35.944 [http-bio-8080-exec-8] DEBUG com.hotel.filter.LoginFilter - Processing request: /admin/booking/add
+2025-10-08 14:46:35.945 [http-bio-8080-exec-8] DEBUG com.hotel.filter.LoginFilter - User 帅哥 is logged in, proceeding with request
+2025-10-08 14:46:35.946 [http-bio-8080-exec-8] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:46:35.948 [http-bio-8080-exec-8] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:46:37.870 [http-bio-8080-exec-8] DEBUG com.hotel.filter.LoginFilter - Processing request: /admin/customer/add
+2025-10-08 14:46:37.875 [http-bio-8080-exec-8] DEBUG com.hotel.filter.LoginFilter - User 帅哥 is logged in, proceeding with request
+2025-10-08 14:46:45.103 [http-bio-8080-exec-4] DEBUG com.hotel.filter.LoginFilter - Processing request: /admin/booking/list
+2025-10-08 14:46:45.103 [http-bio-8080-exec-4] DEBUG com.hotel.filter.LoginFilter - User 帅哥 is logged in, proceeding with request
+2025-10-08 14:46:45.104 [http-bio-8080-exec-4] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:46:50.438 [http-bio-8080-exec-4] DEBUG com.hotel.filter.LoginFilter - Processing request: /admin/booking/list
+2025-10-08 14:46:50.438 [http-bio-8080-exec-4] DEBUG com.hotel.filter.LoginFilter - User 帅哥 is logged in, proceeding with request
+2025-10-08 14:46:50.440 [http-bio-8080-exec-4] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:02.102 [http-bio-8080-exec-6] DEBUG com.hotel.filter.LoginFilter - Processing request: /admin/booking/add
+2025-10-08 14:47:02.103 [http-bio-8080-exec-6] DEBUG com.hotel.filter.LoginFilter - User 帅哥 is logged in, proceeding with request
+2025-10-08 14:47:02.105 [http-bio-8080-exec-6] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:02.107 [http-bio-8080-exec-6] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:02.959 [http-bio-8080-exec-6] DEBUG com.hotel.filter.LoginFilter - Processing request: /admin/index
+2025-10-08 14:47:02.959 [http-bio-8080-exec-6] DEBUG com.hotel.filter.LoginFilter - User 帅哥 is logged in, proceeding with request
+2025-10-08 14:47:02.960 [http-bio-8080-exec-6] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:02.963 [http-bio-8080-exec-6] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:02.965 [http-bio-8080-exec-6] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:02.967 [http-bio-8080-exec-6] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:02.970 [http-bio-8080-exec-6] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:02.972 [http-bio-8080-exec-6] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:02.974 [http-bio-8080-exec-6] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:02.976 [http-bio-8080-exec-6] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:02.978 [http-bio-8080-exec-6] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:02.982 [http-bio-8080-exec-6] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:03.692 [http-bio-8080-exec-6] DEBUG com.hotel.filter.LoginFilter - Processing request: /admin/booking/add
+2025-10-08 14:47:03.693 [http-bio-8080-exec-6] DEBUG com.hotel.filter.LoginFilter - User 帅哥 is logged in, proceeding with request
+2025-10-08 14:47:03.693 [http-bio-8080-exec-6] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:03.696 [http-bio-8080-exec-6] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:04.382 [http-bio-8080-exec-1] DEBUG com.hotel.filter.LoginFilter - Processing request: /admin/index
+2025-10-08 14:47:04.382 [http-bio-8080-exec-1] DEBUG com.hotel.filter.LoginFilter - User 帅哥 is logged in, proceeding with request
+2025-10-08 14:47:04.384 [http-bio-8080-exec-1] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:04.386 [http-bio-8080-exec-1] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:04.388 [http-bio-8080-exec-1] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:04.390 [http-bio-8080-exec-1] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:04.394 [http-bio-8080-exec-1] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:04.397 [http-bio-8080-exec-1] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:04.398 [http-bio-8080-exec-1] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:04.400 [http-bio-8080-exec-1] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:04.402 [http-bio-8080-exec-1] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:04.404 [http-bio-8080-exec-1] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:06.401 [http-bio-8080-exec-3] DEBUG com.hotel.filter.LoginFilter - Processing request: /admin/customer/add
+2025-10-08 14:47:06.401 [http-bio-8080-exec-3] DEBUG com.hotel.filter.LoginFilter - User 帅哥 is logged in, proceeding with request
+2025-10-08 14:47:10.414 [http-bio-8080-exec-3] INFO  com.hotel.controller.RoomController - RoomController initialized
+2025-10-08 14:47:10.415 [http-bio-8080-exec-3] DEBUG com.hotel.filter.LoginFilter - Processing request: /admin/room/list
+2025-10-08 14:47:10.415 [http-bio-8080-exec-3] DEBUG com.hotel.filter.LoginFilter - User 帅哥 is logged in, proceeding with request
+2025-10-08 14:47:10.416 [http-bio-8080-exec-3] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:12.048 [http-bio-8080-exec-3] DEBUG com.hotel.filter.LoginFilter - Processing request: /admin/room/add
+2025-10-08 14:47:12.048 [http-bio-8080-exec-3] DEBUG com.hotel.filter.LoginFilter - User 帅哥 is logged in, proceeding with request
+2025-10-08 14:47:16.681 [http-bio-8080-exec-9] DEBUG com.hotel.filter.LoginFilter - Processing request: /admin/room/add
+2025-10-08 14:47:16.682 [http-bio-8080-exec-9] DEBUG com.hotel.filter.LoginFilter - User 帅哥 is logged in, proceeding with request
+2025-10-08 14:47:17.876 [http-bio-8080-exec-9] DEBUG com.hotel.filter.LoginFilter - Processing request: /admin/room/type/add
+2025-10-08 14:47:17.876 [http-bio-8080-exec-9] DEBUG com.hotel.filter.LoginFilter - User 帅哥 is logged in, proceeding with request
+2025-10-08 14:47:17.876 [http-bio-8080-exec-9] ERROR com.hotel.controller.RoomController - Error processing request
+java.lang.IllegalArgumentException: 不支持的操作: type/add
+	at com.hotel.controller.RoomController.handleGetRequest(RoomController.java:70) ~[classes/:?]
+	at com.hotel.controller.RoomController.handleBusinessLogic(RoomController.java:49) ~[classes/:?]
+	at com.hotel.controller.BaseController.processRequest(BaseController.java:67) ~[classes/:?]
+	at com.hotel.controller.BaseController.doGet(BaseController.java:34) ~[classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at com.hotel.filter.LoginFilter.doFilter(LoginFilter.java:94) ~[classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at com.hotel.filter.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:48) ~[classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:611) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+2025-10-08 14:47:19.997 [http-bio-8080-exec-6] DEBUG com.hotel.filter.LoginFilter - Processing request: /admin/room/type/list
+2025-10-08 14:47:19.997 [http-bio-8080-exec-6] DEBUG com.hotel.filter.LoginFilter - User 帅哥 is logged in, proceeding with request
+2025-10-08 14:47:19.998 [http-bio-8080-exec-6] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:21.852 [http-bio-8080-exec-6] DEBUG com.hotel.filter.LoginFilter - Processing request: /admin/room/list
+2025-10-08 14:47:21.853 [http-bio-8080-exec-6] DEBUG com.hotel.filter.LoginFilter - User 帅哥 is logged in, proceeding with request
+2025-10-08 14:47:21.854 [http-bio-8080-exec-6] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:24.140 [http-bio-8080-exec-6] DEBUG com.hotel.filter.LoginFilter - Processing request: /admin/room/add
+2025-10-08 14:47:24.141 [http-bio-8080-exec-6] DEBUG com.hotel.filter.LoginFilter - User 帅哥 is logged in, proceeding with request
+2025-10-08 14:47:39.470 [http-bio-8080-exec-10] DEBUG com.hotel.filter.LoginFilter - Processing request: /admin/room/type/list
+2025-10-08 14:47:39.470 [http-bio-8080-exec-10] DEBUG com.hotel.filter.LoginFilter - User 帅哥 is logged in, proceeding with request
+2025-10-08 14:47:39.471 [http-bio-8080-exec-10] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:47:41.227 [http-bio-8080-exec-10] DEBUG com.hotel.filter.LoginFilter - Processing request: /admin/room/type/add
+2025-10-08 14:47:41.227 [http-bio-8080-exec-10] DEBUG com.hotel.filter.LoginFilter - User 帅哥 is logged in, proceeding with request
+2025-10-08 14:47:41.227 [http-bio-8080-exec-10] ERROR com.hotel.controller.RoomController - Error processing request
+java.lang.IllegalArgumentException: 不支持的操作: type/add
+	at com.hotel.controller.RoomController.handleGetRequest(RoomController.java:70) ~[classes/:?]
+	at com.hotel.controller.RoomController.handleBusinessLogic(RoomController.java:49) ~[classes/:?]
+	at com.hotel.controller.BaseController.processRequest(BaseController.java:67) ~[classes/:?]
+	at com.hotel.controller.BaseController.doGet(BaseController.java:34) ~[classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at com.hotel.filter.LoginFilter.doFilter(LoginFilter.java:94) ~[classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at com.hotel.filter.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:48) ~[classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:611) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312) ~[tomcat-embed-core-7.0.47.jar:7.0.47]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+2025-10-08 14:58:13.623 [main] INFO  com.hotel.util.ConnectionPool - Database connection pool initialized successfully
+2025-10-08 14:58:14.395 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-10-08 14:58:14.404 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:58:14.414 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:58:14.430 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:58:14.438 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:58:14.441 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:58:14.442 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:58:14.450 [main] INFO  com.hotel.dao.impl.UserDAOImpl - User inserted successfully with ID: 10
+2025-10-08 14:58:14.451 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:58:14.456 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:58:14.460 [main] INFO  com.hotel.dao.impl.UserDAOImpl - User updated successfully with ID: 10
+2025-10-08 14:58:14.461 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 14:58:14.464 [main] INFO  com.hotel.dao.impl.UserDAOImpl - User deleted successfully with ID: 10
+2025-10-08 15:10:25.955 [main] INFO  com.hotel.util.ConnectionPool - Database connection pool initialized successfully
+2025-10-08 15:10:26.594 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-10-08 15:10:26.617 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 15:10:26.628 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 15:10:26.656 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 15:10:26.661 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 15:10:26.663 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 15:10:26.666 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 15:10:26.681 [main] INFO  com.hotel.dao.impl.UserDAOImpl - User inserted successfully with ID: 11
+2025-10-08 15:10:26.682 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 15:10:26.684 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 15:10:26.686 [main] INFO  com.hotel.dao.impl.UserDAOImpl - User updated successfully with ID: 11
+2025-10-08 15:10:26.689 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 15:10:26.691 [main] INFO  com.hotel.dao.impl.UserDAOImpl - User deleted successfully with ID: 11
+2025-10-08 15:12:46.990 [main] INFO  com.hotel.util.ConnectionPool - Database connection pool initialized successfully
+2025-10-08 15:12:47.661 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-10-08 15:12:47.673 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 15:12:47.695 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 15:12:47.717 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 15:12:47.722 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 15:12:47.724 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 15:12:47.727 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 15:12:47.738 [main] INFO  com.hotel.dao.impl.UserDAOImpl - User inserted successfully with ID: 12
+2025-10-08 15:12:47.743 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 15:12:47.745 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 15:12:47.748 [main] INFO  com.hotel.dao.impl.UserDAOImpl - User updated successfully with ID: 12
+2025-10-08 15:12:47.749 [main] DEBUG com.hotel.util.ConnectionPool - Database connection obtained
+2025-10-08 15:12:47.751 [main] INFO  com.hotel.dao.impl.UserDAOImpl - User deleted successfully with ID: 12
+2025-10-08 15:24:45.775 [localhost-startStop-1] INFO  com.hotel.filter.LoginFilter - LoginFilter initialized
+2025-10-08 18:49:53.884 [localhost-startStop-1] INFO  com.hotel.filter.LoginFilter - LoginFilter initialized
+2025-10-08 18:55:45.714 [localhost-startStop-2] INFO  com.hotel.filter.LoginFilter - LoginFilter destroyed
+2025-10-08 18:58:16.622 [localhost-startStop-1] INFO  com.hotel.filter.LoginFilter - LoginFilter initialized
