@@ -55,7 +55,7 @@ CREATE TABLE rooms (
     room_number VARCHAR(10) NOT NULL UNIQUE COMMENT '房间号',
     type_id INT NOT NULL COMMENT '房间类型ID',
     floor TINYINT(2) NOT NULL COMMENT '楼层',
-    status ENUM('AVAILABLE', 'OCCUPIED', 'MAINTENANCE', 'CLEANING') 
+    status ENUM('AVAILABLE', 'OCCUPIED', 'MAINTENANCE', 'CLEANING', 'OUT_OF_ORDER') 
            DEFAULT 'AVAILABLE' COMMENT '房间状态',
     last_cleaned TIMESTAMP NULL COMMENT '最后清洁时间',
     FOREIGN KEY (type_id) REFERENCES room_types(type_id) ON DELETE RESTRICT,
@@ -131,8 +131,19 @@ INSERT INTO rooms (room_number, type_id, floor, status) VALUES
 ('303', 3, 3, 'MAINTENANCE'),
 
 -- 顶楼总统套房
-('401', 4, 4, 'AVAILABLE'),
-('402', 4, 4, 'AVAILABLE');
+('401', 4, 4, 'OCCUPIED'),
+('402', 4, 4, 'CLEANING');
+
+-- 添加更多测试房间
+-- 超级豪华总统套房
+INSERT INTO room_types (type_name, price, bed_count, max_guests, description, amenities) VALUES
+('超级豪华总统套房', 100000.00, 5, 10, '顶级奋华体验，全方位的精品服务', '所有豪华设施,管家服务,景观阳台,按摩浴缸,高端音响,私人健身房,红酒窖,书房');
+
+INSERT INTO rooms (room_number, type_id, floor, status) VALUES
+-- 5楼超级豪华总统套房
+('1001', 5, 10, 'OUT_OF_ORDER'),  -- 故障状态
+('504', 5, 5, 'CLEANING'),
+('505', 2, 5, 'AVAILABLE');
 
 -- 4. 插入测试客户数据
 INSERT INTO customers (name, id_card, phone, email, address, vip_level) VALUES
