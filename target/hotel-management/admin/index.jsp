@@ -48,6 +48,37 @@
                                         <i class="fas fa-users"></i> 客户管理
                                     </a>
                                 </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button" data-bs-toggle="dropdown">
+                                        <i class="fas fa-envelope"></i> 留言
+                                        <span class="badge bg-danger ms-1" id="unreadCount" style="display: none;">0</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="${pageContext.request.contextPath}/admin/message/inbox">
+                                                <i class="fas fa-inbox"></i> 收件箱
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="${pageContext.request.contextPath}/admin/message/outbox">
+                                                <i class="fas fa-paper-plane"></i> 发件箱
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="${pageContext.request.contextPath}/admin/message/unread">
+                                                <i class="fas fa-envelope-open"></i> 未读消息
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="${pageContext.request.contextPath}/admin/message/compose">
+                                                <i class="fas fa-edit"></i> 写消息
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
                                 <c:if test="${sessionScope.user.role == 'ADMIN'}">
                                     <li class="nav-item">
                                         <a class="nav-link" href="${pageContext.request.contextPath}/admin/user/list">

@@ -116,6 +116,16 @@
         <url-pattern>/admin/index</url-pattern>
     </servlet-mapping>
 
+    <!-- 留言管理Servlet -->
+    <servlet>
+        <servlet-name>MessageController</servlet-name>
+        <servlet-class>com.hotel.controller.MessageController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MessageController</servlet-name>
+        <url-pattern>/admin/message/*</url-pattern>
+    </servlet-mapping>
+
     <!-- 会话超时设置（30分钟） -->
     <session-config>
         <session-timeout>30</session-timeout>

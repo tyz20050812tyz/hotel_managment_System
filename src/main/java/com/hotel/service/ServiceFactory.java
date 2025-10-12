@@ -13,6 +13,7 @@ public class ServiceFactory {
     private static volatile CustomerService customerServiceInstance;
     private static volatile RoomService roomServiceInstance;
     private static volatile BookingService bookingServiceInstance;
+    private static volatile MessageService messageServiceInstance;
     
     /**
      * 创建UserService实例
@@ -75,6 +76,21 @@ public class ServiceFactory {
     }
     
     /**
+     * 创建MessageService实例
+     * @return MessageService实例
+     */
+    public static MessageService createMessageService() {
+        if (messageServiceInstance == null) {
+            synchronized (ServiceFactory.class) {
+                if (messageServiceInstance == null) {
+                    messageServiceInstance = new MessageServiceImpl();
+                }
+            }
+        }
+        return messageServiceInstance;
+    }
+    
+    /**
      * 重置所有Service实例（主要用于测试）
      */
     public static void resetInstances() {
@@ -82,5 +98,6 @@ public class ServiceFactory {
         customerServiceInstance = null;
         roomServiceInstance = null;
         bookingServiceInstance = null;
+        messageServiceInstance = null;
     }
 }

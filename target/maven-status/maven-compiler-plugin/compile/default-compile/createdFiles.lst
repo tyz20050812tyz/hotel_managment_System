@@ -11,6 +11,7 @@ com\hotel\service\strategy\PriceCalculator.class
 com\hotel\controller\UserController.class
 com\hotel\model\User$UserRole.class
 com\hotel\controller\BookingController.class
+com\hotel\dao\MessageDAO.class
 com\hotel\dao\RoomDAO.class
 com\hotel\dao\UserDAO.class
 com\hotel\service\impl\BookingServiceImpl.class
@@ -23,6 +24,8 @@ com\hotel\service\UserService.class
 com\hotel\dao\RoomTypeDAO.class
 com\hotel\service\ServiceFactory.class
 com\hotel\controller\BaseController.class
+com\hotel\dao\impl\MessageDAOImpl.class
+com\hotel\model\Message$Priority.class
 com\hotel\dao\BookingDAO.class
 com\hotel\service\BookingService.class
 com\hotel\controller\RoomController.class
@@ -30,6 +33,7 @@ com\hotel\controller\IndexController.class
 com\hotel\filter\CharacterEncodingFilter.class
 com\hotel\model\Booking$BookingStatus.class
 com\hotel\service\CustomerService.class
+com\hotel\model\Message$MessageType.class
 com\hotel\model\Room.class
 com\hotel\service\strategy\impl\VIPPriceStrategy.class
 com\hotel\util\ConnectionPool.class
@@ -39,11 +43,15 @@ com\hotel\dao\CustomerDAO.class
 com\hotel\model\RoomType.class
 com\hotel\dao\impl\UserDAOImpl.class
 com\hotel\service\impl\UserServiceImpl.class
+com\hotel\service\MessageService.class
 com\hotel\dao\impl\RoomDAOImpl.class
+com\hotel\model\Message.class
+com\hotel\controller\MessageController.class
 com\hotel\controller\LogoutController.class
 com\hotel\util\ConfigManager.class
 com\hotel\controller\BaseController$ResponseResult.class
 com\hotel\controller\CustomerController.class
 com\hotel\model\Room$RoomStatus.class
 com\hotel\dao\impl\CustomerDAOImpl.class
+com\hotel\service\impl\MessageServiceImpl.class
 com\hotel\service\strategy\impl\RegularPriceStrategy.class
