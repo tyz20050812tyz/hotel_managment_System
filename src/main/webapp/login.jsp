@@ -54,7 +54,7 @@
                                     <i class="fas fa-lock"></i>
                                 </span>
                                         <input type="password" class="form-control" id="password" name="password" placeholder="请输入密码" required>
-                                        <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                        <button class="btn btn-outline-secondary" type="button" id="togglePassword" title="显示密码">
                                     <i class="fas fa-eye"></i>
                                 </button>
                                     </div>
@@ -102,51 +102,6 @@
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
             <script src="${pageContext.request.contextPath}/js/login.js"></script>
-
-            <script>
-                // 页面加载完成后的初始化
-                document.addEventListener('DOMContentLoaded', function() {
-                    // 密码显示/隐藏切换
-                    const togglePassword = document.getElementById('togglePassword');
-                    const passwordInput = document.getElementById('password');
-
-                    togglePassword.addEventListener('click', function() {
-                        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
-                        passwordInput.setAttribute('type', type);
-
-                        const icon = this.querySelector('i');
-                        icon.classList.toggle('fa-eye');
-                        icon.classList.toggle('fa-eye-slash');
-                    });
-
-                    // 表单提交处理
-                    const loginForm = document.getElementById('loginForm');
-                    const loginBtn = document.getElementById('loginBtn');
-
-                    loginForm.addEventListener('submit', function(e) {
-                        // 禁用提交按钮，防止重复提交
-                        loginBtn.disabled = true;
-                        loginBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 登录中...';
-
-                        // 如果需要可以在这里添加客户端验证
-                        const username = document.getElementById('username').value.trim();
-                        const password = document.getElementById('password').value.trim();
-
-                        if (!username || !password) {
-                            e.preventDefault();
-                            alert('请输入用户名和密码');
-
-                            // 恢复按钮状态
-                            loginBtn.disabled = false;
-                            loginBtn.innerHTML = '<i class="fas fa-sign-in-alt"></i> 登录';
-                            return;
-                        }
-                    });
-
-                    // 自动聚焦到用户名输入框
-                    document.getElementById('username').focus();
-                });
-            </script>
         </body>
 
         </html>

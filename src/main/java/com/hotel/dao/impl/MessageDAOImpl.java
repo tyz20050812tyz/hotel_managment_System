@@ -36,25 +36,31 @@ public class MessageDAOImpl implements MessageDAO {
     
     private static final String SELECT_RECEIVED_SQL = 
         "SELECT m.*, " +
-        "s.username AS sender_username, s.real_name AS sender_real_name, s.role AS sender_role " +
+        "s.username AS sender_username, s.real_name AS sender_real_name, s.role AS sender_role, " +
+        "r.username AS receiver_username, r.real_name AS receiver_real_name, r.role AS receiver_role " +
         "FROM messages m " +
         "LEFT JOIN users s ON m.sender_id = s.user_id " +
+        "LEFT JOIN users r ON m.receiver_id = r.user_id " +
         "WHERE m.receiver_id = ? AND m.is_deleted = FALSE " +
         "ORDER BY m.send_time DESC";
     
     private static final String SELECT_SENT_SQL = 
         "SELECT m.*, " +
+        "s.username AS sender_username, s.real_name AS sender_real_name, s.role AS sender_role, " +
         "r.username AS receiver_username, r.real_name AS receiver_real_name, r.role AS receiver_role " +
         "FROM messages m " +
+        "LEFT JOIN users s ON m.sender_id = s.user_id " +
         "LEFT JOIN users r ON m.receiver_id = r.user_id " +
         "WHERE m.sender_id = ? AND m.is_deleted = FALSE " +
         "ORDER BY m.send_time DESC";
     
     private static final String SELECT_UNREAD_SQL = 
         "SELECT m.*, " +
-        "s.username AS sender_username, s.real_name AS sender_real_name, s.role AS sender_role " +
+        "s.username AS sender_username, s.real_name AS sender_real_name, s.role AS sender_role, " +
+        "r.username AS receiver_username, r.real_name AS receiver_real_name, r.role AS receiver_role " +
         "FROM messages m " +
         "LEFT JOIN users s ON m.sender_id = s.user_id " +
+        "LEFT JOIN users r ON m.receiver_id = r.user_id " +
         "WHERE m.receiver_id = ? AND m.is_read = FALSE AND m.is_deleted = FALSE " +
         "ORDER BY m.send_time DESC";
     
@@ -95,9 +101,11 @@ public class MessageDAOImpl implements MessageDAO {
     
     private static final String SELECT_REPLIES_SQL = 
         "SELECT m.*, " +
-        "s.username AS sender_username, s.real_name AS sender_real_name, s.role AS sender_role " +
+        "s.username AS sender_username, s.real_name AS sender_real_name, s.role AS sender_role, " +
+        "r.username AS receiver_username, r.real_name AS receiver_real_name, r.role AS receiver_role " +
         "FROM messages m " +
         "LEFT JOIN users s ON m.sender_id = s.user_id " +
+        "LEFT JOIN users r ON m.receiver_id = r.user_id " +
         "WHERE m.parent_message_id = ? AND m.is_deleted = FALSE " +
         "ORDER BY m.send_time ASC";
 

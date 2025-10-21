@@ -113,12 +113,13 @@ public class IndexController extends BaseController {
         long availableRooms = allRooms.stream().mapToLong(r -> 
             r.getStatus() == Room.RoomStatus.AVAILABLE ? 1 : 0).sum();
         stats.put("availableRooms", availableRooms);
-        stats.put("occupiedRooms", allRooms.stream().mapToLong(r -> 
-            r.getStatus() == Room.RoomStatus.OCCUPIED ? 1 : 0).sum());
+        long occupiedRooms = allRooms.stream().mapToLong(r -> 
+            r.getStatus() == Room.RoomStatus.OCCUPIED ? 1 : 0).sum();
+        stats.put("occupiedRooms", occupiedRooms);
         
-        // 计算入住率
+        // 计算入住率（已入住房间 / 总房间数）
         if (allRooms.size() > 0) {
-            BigDecimal occupancyRate = BigDecimal.valueOf(allRooms.size() - availableRooms)
+            BigDecimal occupancyRate = BigDecimal.valueOf(occupiedRooms)
                 .divide(BigDecimal.valueOf(allRooms.size()), 4, RoundingMode.HALF_UP)
                 .multiply(BigDecimal.valueOf(100));
             stats.put("occupancyRate", occupancyRate.setScale(2, RoundingMode.HALF_UP));

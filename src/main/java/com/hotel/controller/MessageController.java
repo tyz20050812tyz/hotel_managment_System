@@ -209,8 +209,20 @@ public class MessageController extends BaseController {
                 Message parentMessage = messageService.getMessage(parentMessageId);
                 if (parentMessage != null && messageService.canViewMessage(parentMessageId, currentUser.getUserId())) {
                     request.setAttribute("parentMessage", parentMessage);
-                    // 设置默认收件人为原发送者
-                    request.setAttribute("receiverId", parentMessage.getSenderId().toString());
+                    
+                    // 智能设置默认收件人：
+                    // - 如果当前用户是接收者，则回复给发送者
+                    // - 如果当前用户是发送者，则回复给接收者
+                    Integer defaultReceiverId;
+                    if (parentMessage.getReceiverId().equals(currentUser.getUserId())) {
+                        // 当前用户是接收者，回复给发送者
+                        defaultReceiverId = parentMessage.getSenderId();
+                    } else {
+                        // 当前用户是发送者，回复给接收者
+                        defaultReceiverId = parentMessage.getReceiverId();
+                    }
+                    request.setAttribute("receiverId", defaultReceiverId.toString());
+                    
                     // 设置默认主题
                     String subject = parentMessage.getSubject();
                     if (!subject.startsWith("RE: ")) {

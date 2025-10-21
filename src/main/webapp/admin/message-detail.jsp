@@ -366,8 +366,7 @@
                     }
 
                     // 自动标记为已读（如果是接收者且未读）
-                    <
-                    c: if test = "${not message.isRead && message.receiverId == sessionScope.user.userId}" >
+                    <c:if test="${not message.isRead && message.receiverId == sessionScope.user.userId}">
                         // 页面加载后自动标记为已读
                         window.addEventListener('load', function() {
                             fetch('${pageContext.request.contextPath}/admin/message/markRead', {
@@ -379,8 +378,8 @@
                             }).catch(error => {
                                 console.error('Mark as read error:', error);
                             });
-                        }); <
-                    /c:if>
+                        }); 
+                    </c:if>
                 </script>
             </body>
 

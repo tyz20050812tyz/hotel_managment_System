@@ -322,12 +322,10 @@
                             cancelButtonText: '取消'
                         }).then((result) => {
                             if (result.isConfirmed) {
-                                const allMessageIds = []; <
-                                c: forEach
-                                var = "message"
-                                items = "${messages}" >
-                                    allMessageIds.push('${message.messageId}'); <
-                                /c:forEach>
+                                const allMessageIds = []; 
+                                <c:forEach var="message" items="${messages}">
+                                    allMessageIds.push('${message.messageId}'); 
+                                </c:forEach>
 
                                 fetch('${pageContext.request.contextPath}/admin/message/markReadBatch', {
                                         method: 'POST',
