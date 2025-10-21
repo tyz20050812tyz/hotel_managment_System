@@ -23,7 +23,7 @@
 - **服务器**: Apache Tomcat 9.0
 - **前端**: HTML5 + CSS3 + JavaScript (ES6) + Bootstrap 5.3
 - **构建工具**: Maven 3.6+
-- **开发工具**: IntelliJ IDEA / Qoder IDE
+- **开发工具**: IntelliJ IDEA
 - **日志框架**: Log4j2
 - **连接池**: 自定义数据库连接池
 - **版本控制**: Git
